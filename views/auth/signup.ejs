@@ -1,0 +1,55 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/css/signup.css">
+
+</head>
+<body>
+
+<!-- Header ends here -->
+
+
+ 
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 p-0 pt-3">
+        <i class="fa fa-twitter"></i>
+        <h3 class="text-center pt-3">SignUp for Twitter</h3>
+        <form action="/login" method="POST">
+          <div class="mb-3 bg-color">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="firstname" required>
+          </div>
+          <div class="mb-3 bg-color">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lastname" required>
+          </div>
+          <div class="mb-3 bg-color">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="mb-3 bg-color">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username" required>
+          </div>
+          <div class="mb-3 bg-color">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-custom btn-lg btn-block mt-3">Sign Up</button>
+          <div class="text-center pt-3 pb-3">
+            <a href="/login" class="">Already have an Account ? Login here</a>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+
+
+
+<%- include("../partials/footer") %>

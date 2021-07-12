@@ -1,0 +1,43 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" href="/css/main.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="row">
+        <nav class="col-2">
+            <a href="/"><i class="fab fa-twitter"></i></a>
+            <a href="/"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-search"></i><p</a>
+            <a href="#"><i class="fas fa-hashtag"></i></a>
+            <a href="#"><i class="far fa-bell"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+            <a href="#"><i class="far fa-user"></i></a>
+            <a href="#"><i class="far fa-bookmark"></i></a>
+            <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+        </nav>
+        <div class="main-container col-10 col-md-8 col-lg-6">
+            <h2 class="fw-bold titleContainer">Home</h2>
+            <div class="mb-3 postContainer">
+                <div class="userImageContainer">
+                    <img src="/images/profilePic.jpeg" alt="User Profile pic">
+                </div>
+                <div class="textAreaContainer">
+                   <textarea  id="post-text" cols="30" rows="3" placeholder="What's happening?"></textarea>
+                   <button id="submitPostButton">Post</button>
+                </div>
+            </div>
+            <div class="mb-3">
+                <ul id="allTweets"></ul>
+
+            </div>
+        </div>
+        <div class="d-none d-md-block col-md-2 col-lg-4">
+            Third div
+        </div>
+</div>
+
+<script src="/js/common.js"></script>
+<%- include("../partials/footer") %>
+    
